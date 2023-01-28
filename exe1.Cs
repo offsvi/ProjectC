@@ -1,20 +1,37 @@
-//Crie um algoritmo que verifique se um número informado é par ou impar
+/*
+    Esse código faz a leitura de três nostas de um determinado aluno 
+    e fornece para o professor(a) a média de três notas, indicando 
+    se o aluno está em recuperção ou aprovado. 
+*/
 
-
-int n = 0;
-int r = 0;
-
-//Pedindo para imprimir na tela
-Console.WriteLine("Determina se o número é par ou impar");
-Console.WriteLine("Informe um número: ");
-n = Convert.ToInt32(Console.ReadLine()); //Utilizado para converter objetos
-r = n % 2;
-if (r == 1)//Determinando as condições Se
+class Conclusao 
 {
-    Console.WriteLine("O número informado é impar");
+    static void Main()
+    {
+        float media = 0;
+
+        Console.WriteLine("Olá, Bem vindo ao programa de cálculo de média!");
+
+        Console.WriteLine("Irei auxiliar a você a calcular a média do seu aluno!");
+
+        Console.WriteLine("Digite a primeira nota: ");
+        int.TryParse(Console.ReadLine(), out int nota1);
+
+        Console.WriteLine("Digite a segunda nota: ");
+        int.TryParse(Console.ReadLine(), out int nota2);
+
+        Console.WriteLine("Digite a segunda nota: ");
+        int.TryParse(Console.ReadLine(), out int nota3);
+
+        media = (nota1 + nota2 + nota3) / 3;
+
+        if(media < 7)
+        {
+            Console.WriteLine("A média do aluno é: {0}", media);
+        }
+        else
+        {
+            Console.WriteLine("Aluno Aprovado!");
+        }
+    }
 }
-else
-{
-    Console.WriteLine("O número informado é par");
-}
-Console.ReadLine();

@@ -5,6 +5,7 @@
     indicando se o aluno está em recuperção ou aprovado. 
 */
 
+// Inicio do código 
 class Conclusao 
 {
     static void Main()

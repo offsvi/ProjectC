@@ -1,8 +1,8 @@
 /*
     Esse código faz a leitura de três nostas de um determinado aluno 
     e fornece para o professor(a) a média de três notas, sendo =7 ou maior 
-    que 7 aprovado indicando 
-    se o aluno está em recuperção ou aprovado. 
+    que 7 aprovado e inferior a sete reprovado.
+    indicando se o aluno está em recuperção ou aprovado. 
 */
 
 class Conclusao 

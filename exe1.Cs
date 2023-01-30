@@ -14,7 +14,7 @@ class Conclusao
 
         Console.WriteLine("Olá, Bem vindo ao programa de cálculo de média!");
 
-        Console.WriteLine("Irei auxiliar a você a calcular a média do seu aluno!");
+        Console.WriteLine("Auxiliarei você a calcular a média do seu aluno!");
 
         Console.WriteLine("Digite a primeira nota: ");
         int.TryParse(Console.ReadLine(), out int nota1);
